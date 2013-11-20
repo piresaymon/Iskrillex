@@ -2,6 +2,10 @@ from django.conf.urls.defaults import patterns, include, url
 from core.views  import index,find,construction
 from core.views  import construction
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.utils.functional import curry
+from django.views.defaults import *
+
+handler500 = curry(server_error, template_name='500.html')
 #import settings
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin

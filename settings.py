@@ -3,7 +3,9 @@ import dj_database_url
 import os
 PROJECT_DIR = os.path.dirname(__file__)
 
-DEBUG = True
+DEBUG = False
+ALLOWED_HOSTS = ['localhost']
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
