@@ -13,12 +13,12 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 		for url in soup:
 			results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0]).replace("%2520","%20"))	
 		
-		"""parameters = {'q':"?intitle:index?%s %s last modified -html"%('.wma',query.encode('utf8')),'hl':lang,'num':num}		
+		parameters = {'q':"?intitle:index?%s %s last modified -html"%('.wma',query.encode('utf8')),'hl':lang,'num':num}		
 		result2 = requests.get(url,params = parameters)							
 		soup = BeautifulSoup(result2.content).findAll('h3',attrs = {'class':'r'})		
 		for url in soup:			
 			results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0]).replace("%2520","%20"))					
-			print url"""
+			print url
 		#except Exception as e:
 		#	print e		
 
