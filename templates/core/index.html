@@ -17,7 +17,8 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	  <![endif]-->	
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css">	
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css">
+	<script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script> 
 </head>
 <body>
 <div class="tudo">
@@ -37,18 +38,17 @@
   	<div class="row-fluid">
       <div class="span12 spacetop">
         <img src="{{ STATIC_URL }}img/logo.png"/>
-        <form class="form-vertical" action="." method="post" id="searchForm">
-  			<div class="btn-group">            
-
-  		<!-- 		<a class="btn dropdown-toggle" data-toggle="dropdown" >
+        <form class="form-horizontal" action="." method="post" id="searchForm">
+  			<div class="btn-group">
+  				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
     			<span class="caret"></span>
   				</a>
  	 		<ul class="dropdown-menu">
-     			<li class="dropdown-submenu">
-    				<a tabindex="-1" href="#" class="text-left">IsMusic</a>
+     			<li class="dropdown-submenu" id="music">
+    				<a tabindex="-1" class="text-left">IsMusic</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".mp3"  >
+ 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".mp3" >
  								 MP3
 						</label></li></a>
                         <a><li><label class="radio">
@@ -61,7 +61,7 @@
 						</label></li></a>
     				</ul>
   				</li>
-                <li class="dropdown-submenu">
+                <li class="dropdown-submenu" id="picture">
     				<a tabindex="-1" href="#" class="text-left">IsPicture</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
@@ -74,7 +74,7 @@
 						</label></li></a>
     				</ul>
   				</li>
-                <li class="dropdown-submenu">
+                <li class="dropdown-submenu" id="file">
     				<a tabindex="-1" href="#" class="text-left">IsFile</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
@@ -103,11 +103,11 @@
 						</label></li></a>      
     				</ul>
   				</li>
-                <li class="dropdown-submenu">
+                <li class="dropdown-submenu" id="video">
     				<a tabindex="-1" href="#" class="text-left">IsVideo</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".avi"  >
+ 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".avi" >
  								 AVI
 						</label></li></a>
                         <a><li><label class="radio">
@@ -125,18 +125,11 @@
     				</ul>
   				</li>
  	 		</ul>
-      -->
 			</div>
 
       
         <input type="text" name="q" id="q" placeholder="Buscar" class="input-xxlarge" >
-        <input type="hidden" name="typeGroup" id="typeGroup"/>
         {% csrf_token %} 
-        <br>
-            <a id="music" class="btn"><i class="icon-headphones"></i> IsMusic</a>
-            <a type="submit" id="picture" class="btn"><i class="icon-camera"></i> IsPicture</a>
-            <a type="submit" id="file" class="btn"><i class="icon-file"></i> IsFile</a>
-            <a type="submit" id="video" class="btn"><i class="icon-facetime-video"></i> IsVideo</a>
         <br>
         <br>
         <button type="submit" id="submitButton" class="btn btn-large ">Krillex</button>
@@ -147,7 +140,7 @@
       <!-- Selo Spider.Ad 120x50 -->
       <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-      <script async type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
+      <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
   <div class="container-fluid">
     <div id="resultsDiv">   
@@ -160,18 +153,20 @@
           </div>
       {% endif %}
       </div>
-              
-      <script src="http://code.jquery.com/jquery.js"></script>
-      <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
-      <script src="{{ STATIC_URL }}js/script.js"></script>          
-      <script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script>
-      <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
-      <script type="text/javascript" async src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdRetangulo"></script>
-      <!-- Fim da Spider.Ad TAG -->   
+        
+
+        <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
+        <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdRetangulo"></script>
+        <!-- Fim da Spider.Ad TAG -->   
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/script.js"></script>
+          
         </div>
         </div>    
         </div>
         </div> 
-        <script async type="text/javascript" src="http://venom1301.spider.ad?id=15687"></script>
+
+        <script async="true" type="text/javascript" src="http://venom1301.spider.ad?id=15687"></script>
 </body>
 </html>

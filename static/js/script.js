@@ -1,54 +1,3 @@
-var typeGroup = document.getElementById("typeGroup");
-music.addEventListener("click", function () {
-  typeGroup.value = "music";
-  music.className = music.className.replace("disabled", " ");
-  $("#music").addClass("btn-primary");
-  $("#picture").addClass("disabled");
-  picture.className = picture.className.replace("btn-primary", " ");
-  $("#file").addClass("disabled");
-  file.className = file.className.replace("btn-primary", " ");
-  $("#video").addClass("disabled");
-  video.className = video.className.replace("btn-primary", " ");
-});
-var picture = document.getElementById("picture");
-picture.addEventListener("click", function(){
-  typeGroup.value = "picture";
-  picture.className = picture.className.replace("disabled", " ");
-  $("#picture").addClass("btn-primary");
-  $("#music").addClass("disabled");
-  music.className = music.className.replace("btn-primary", " ");
-  $("#file").addClass("disabled");
-  file.className = file.className.replace("btn-primary", " ");
-  $("#video").addClass("disabled");
-  video.className = video.className.replace("btn-primary", " ");
-});
-
-var file = document.getElementById("file");
-file.addEventListener("click", function(){
-  typeGroup.value = "file";
-  file.className = file.className.replace("disabled", " ");
-  $("#file").addClass("btn-primary");
-  $("#music").addClass("disabled");
-  music.className = music.className.replace("btn-primary", " ");
-  $("#picture").addClass("disabled");
-  picture.className = picture.className.replace("btn-primary", " ");
-  $("#video").addClass("disabled");
-  video.className = video.className.replace("btn-primary", " ");
-});
-
-var video = document.getElementById("video");
-video.addEventListener("click", function(){
-  typeGroup.value = "video";
-  video.className = video.className.replace("disabled", " ");
-  $("#video").addClass("btn-primary");
-  $("#music").addClass("disabled");
-  music.className = music.className.replace("btn-primary", " ");
-  $("#picture").addClass("disabled");
-  picture.className = picture.className.replace("btn-primary", " ");
-  $("#file").addClass("disabled");
-  file.className = file.className.replace("btn-primary", " ");
-});
-
 $('a#email').hide(0);
   $('a#software').hide(0);
   $('a#down').hide(0);
@@ -76,16 +25,37 @@ $('a#email').hide(0);
 	});
   });
 
+  $("#music").mouseover(function(){
+      $("#music input:radio[name='typeGroup']").first().attr("checked",true);  
+  });
+  $("#picture").mouseover(function(){
+      $("#picture input:radio[name='typeGroup']").first().attr("checked",true);  
+  });
+  $("#file").mouseover(function(){
+      $("#file input:radio[name='typeGroup']").first().attr("checked",true);  
+  });
+  $("#video").mouseover(function(){
+      $("#video input:radio[name='typeGroup']").first().attr("checked",true);  
+  });
  $("#submitButton").click(function(event) {
     event.preventDefault(); 
     var $form = $("#searchForm");        
 
-    var $type = $("#typeGroup");
-    var $q = $("#q").val().trim();		
-	if($type != null & $q.length > 0){
+    var type = $("input:radio[name='typeGroup']").is(":checked");
+	//var type = $("input:radio[name='typeGroup']").attr("checked");
+	//var type = $("#typeGroup").is(":checked");
+    var q = $("#q").val().trim();	
+	//if($("#typeGroup").is(":checked") & q.length > 0){
+	if(type & q.length > 0){
 		$form.submit();
 	}else{
 		alert("Selecione alguma opcao para realizar pesquisa.");
-		return false;		
+		return false;
+		//$.post( url, $form.serialize());
+		
 	}
+	//else{
+	//	$.post( url, $form.serialize());	
+	//}
+    
  });
