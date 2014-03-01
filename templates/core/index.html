@@ -139,14 +139,15 @@
 
       {% if results %}
 
+      
+  <div class="container-fluid">
+    <div id="resultsDiv">   
+      <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
       <!-- Selo Spider.Ad 120x50 -->
       <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
       <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
-  <div class="container-fluid">
-    <div id="resultsDiv">   
-      <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
           <ul class="unstyled span8">
           {% for url in results %}
             <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
