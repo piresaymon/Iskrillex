@@ -34,7 +34,7 @@ body {
    background:#1F1F1F;
 }
 .clearfix {
-  *zoom: -2;
+  *zoom: 1;
 }
 
 .clearfix:before,
