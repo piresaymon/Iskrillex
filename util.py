@@ -16,7 +16,7 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 	soup = BeautifulSoup(result.content).findAll('h3',attrs = {'class':'r'})
 	results = []
 	for url in soup:
-		results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0]).replace("%2520","%20"))
+		results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0]).replace("%2520","%20").replace("%3F","?"))
 		#results.append(url.next['href'].encode('latin1')[7:].split('&')[0])
 		#print url.next['href'].encode('latin1')[7:].split('&')[0].replace("%2520","%20")
 		#print url.next['href'].encode('latin1')[7:]
