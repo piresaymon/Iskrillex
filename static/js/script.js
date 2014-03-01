@@ -1,4 +1,4 @@
-$('a#email').hide(0);
+$('a#email').hide(1);
   $('a#software').hide(0);
   $('a#down').hide(0);
   
