@@ -24,9 +24,9 @@
 <div class="tudo">
   <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
       <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
-       <a id="sd" href="#">Contato</a>
-        <a id="sr" href="piresaymon@gmail.com"</a>
-        <!--<a id="sr" href="http://www.brothersoft.com/download-orbit-downloader-54366.html " target="_blank">Software Recomendado</a>-->
+       <a id="sd" href="#">Contact</a>
+        <a href="mailto:piresaymon@gmail.com">Clique para e-mail </a>
+        <a id="sr" href="http://www.brothersoft.com/download-orbit-downloader-54366.html " target="_blank">Software Recomendado</a>
         <a id="down" class="label label-important">Click to download</a>
         <a id="wm" href="http://www.be.net/davidmalheiros" target="_blank">Web Master</a>
       <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
@@ -57,34 +57,19 @@
 						</label></li></a>
                         <a><li><label class="radio">
  						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".flac"  >
- 								 Flac
+ 								 OGG
 						</label></li></a>
     				</ul>
   				</li>
-               <!--
-                <li class="dropdown-submenu" id="picture">
-    				<a tabindex="-1" href="#" class="text-left">IsPicture</a>
-    				<ul class="dropdown-menu text-left" style="padding-left:10px;">
-						<a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".jpg" checked >
- 								 JPG
-						</label></li></a>
-                        <a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".png"  >
- 								 PNG
-						</label></li></a>
-    				</ul>
-  				</li>
-          -->
-                <li class="dropdown-submenu" id="file">
+             <li class="dropdown-submenu" id="file">
     				<a tabindex="-1" href="#" class="text-left">IsFile</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".iso" checked >
+ 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".iso"  >
  								 ISO
 						</label></li></a>
                         <a><li><label class="radio">
- 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".rar"  >
+ 						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".rar" checked >
  								 RAR
 						</label></li></a>
                         <a><li><label class="radio">
@@ -139,15 +124,15 @@
 
       {% if results %}
 
-      
-  <div class="container-fluid">
+     
     <div id="resultsDiv">   
       <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
-      <!-- Selo Spider.Ad 120x50 -->
+       <!-- Selo Spider.Ad 120x50 -->
       <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
       <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
+  <div class="container-fluid">
           <ul class="unstyled span8">
           {% for url in results %}
             <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
