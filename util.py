@@ -27,7 +27,11 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 			.replace("%3B",";")
 			.replace("%3D","=")
 			.replace("%42","@")
-			.replace("%20"," "))
+			.replace("%20"," ")
+			.replace("%255B","[")
+			.replace("%255D","]")
+			.replace("%5B","[")
+			.replace("%5D","]"))
 		#results.append(url.next['href'].encode('latin1')[7:].split('&')[0])
 		#print url.next['href'].encode('latin1')[7:].split('&')[0].replace("%2520","%20")
 		#print url.next['href'].encode('latin1')[7:]
