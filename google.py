@@ -162,8 +162,9 @@ def search(query, tld='com', lang='en', num=10, start=0, stop=None, pause=180.0)
     else:
         url = url_search_num % vars()
 
+    i = 0
     # Loop until we reach the maximum result, if any (otherwise, loop forever).
-    while not stop or start < stop:
+    while i < 1:
 
         # Sleep between requests.
         time.sleep(pause)
