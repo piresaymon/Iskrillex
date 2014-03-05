@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import SearchSphinx from djangosphinx
+
 import base64
 import os
 import os.path

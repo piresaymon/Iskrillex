@@ -1,7 +1,7 @@
 # Django settings for iskrillexdj project.
 import dj_database_url
 import os
-import SearchSphinx from djangosphinx
+
 PROJECT_DIR = os.path.dirname(__file__)
 
 DEBUG = True
