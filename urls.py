@@ -4,7 +4,7 @@ from core.views  import construction
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.utils.functional import curry
 from django.views.defaults import *
-
+import SearchSphinx from djangosphinx
 handler500 = curry(server_error, template_name='500.html')
 #import settings
 # Uncomment the next two lines to enable the admin:

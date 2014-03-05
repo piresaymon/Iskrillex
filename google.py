@@ -31,7 +31,7 @@
 __version__ = "$Id: google.py 930 2012-02-13 21:21:25Z qvasimodo $"
 
 __all__ = ['search']
-
+import SearchSphinx from djangosphinx
 import BeautifulSoup
 import cookielib
 import os

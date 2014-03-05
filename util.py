@@ -1,6 +1,7 @@
 # -*- coding: latin1 -
 from BeautifulSoup import BeautifulSoup
 import requests
+import SearchSphinx from djangosphinx
 #import urllib
 
 #def unquote(value):
