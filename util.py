@@ -10,7 +10,7 @@ import requests
 def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 	url = "http://www.google."+domain+"/search"
 	#url = "http://www.google."+domain+
-	parameters = {'q':"?intitle:index?%s %s last modified -html -wallywashis"%(type,query.encode('utf8')),'hl':lang,'num':num}
+	parameters = {'q':"%s %s Intitle:”indez.of””parente directory””size””last modifierd””description” -wallywashis [snd] –inurl:(jsp|php|html|aspx|htm|cf|shtml)-site:.info "%(type,query.encode('utf8')),'hl':lang,'num':num}
 	#parameters = {'q':query,'hl':lang}
 	print parameters["q"]
 	result = requests.get(url,params = parameters)
