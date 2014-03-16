@@ -13,7 +13,7 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 	#parameters = {'q':query,'hl':lang}
 	print parameters["q"]
 	result = requests.get(url,params = parameters)
-	soup = BeautifulSoup(result.content).findAll('h4',attrs = {'class':'r'})
+	soup = BeautifulSoup(result.content).findAll('h3',attrs = {'class':'r'})
 	results = []
 	for url in soup:
 		results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0])
