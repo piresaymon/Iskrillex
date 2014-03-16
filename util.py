@@ -43,6 +43,5 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 		#print url.next['href'].encode('latin1')[7:]
 	return results
 		
-
 #def unescape_this(url):
 #    return url.replace(r"\\/", "/")
