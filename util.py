@@ -9,11 +9,11 @@ import requests
 def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 	url = "http://www.google."+domain+"/search"
 	#url = "http://www.google."+domain+
-	parameters = {'q':"?intitle:index?%s %s last modified -html"%(type,query.encode('utf8')),'hl':lang,'num':num}
+	parameters = {'q':"?intitle:index?%s %s last modified -html -wallywashis"%(type,query.encode('utf8')),'hl':lang,'num':num}
 	#parameters = {'q':query,'hl':lang}
 	print parameters["q"]
 	result = requests.get(url,params = parameters)
-	soup = BeautifulSoup(result.content).findAll('h3',attrs = {'class':'r'})
+	soup = BeautifulSoup(result.content).findAll('h4',attrs = {'class':'r'})
 	results = []
 	for url in soup:
 		results.append(str(url.next['href'].encode('latin1')[7:].split('&')[0])
