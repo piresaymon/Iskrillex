@@ -37,10 +37,12 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 			.replace("%7B","{")
 			.replace("%7D","}")
 			.replace("%252F","/")
+			.replace("%f3","�")
 			.replace("%2F","/"))
 		#results.append(url.next['href'].encode('latin1')[7:].split('&')[0])
 		#print url.next['href'].encode('latin1')[7:].split('&')[0].replace("%2520","%20")
 		#print url.next['href'].encode('latin1')[7:]
+		#This replace made change of 1º term for 2º term (1º"%3f", 2º "?"), used on redirection links 
 	return results
 		
 #def unescape_this(url):
