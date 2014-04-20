@@ -36,29 +36,32 @@
       <a id="face" href="https://www.facebook.com/iskrillexme" target="_blank"></a>
     </div>
   </div>
-  <div class="conteudo">
+  <div class="conteudo">face
   <div class="container-fluid pagination-centered">  
   	<div class="row-fluid">
       <div class="span12 spacetop">
         <img src="{{ STATIC_URL }}img/logo.png"/>
+        <h2 class="result">Bucador Google</h2>
+        <script>
+          (function() {
+            var cx = '005030560705283604246:d0hpxzxk8yq';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search>
+        <h2 class="result">Bucador Classico</h2>
         <form class="form-horizontal" action="." method="post" id="searchForm">
   			<div class="btn-group">
   				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
     			<span class="caret"></span>
   				</a>
-          <script>
-  (function() {
-    var cx = '005030560705283604246:d0hpxzxk8yq';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
+
  	 		<ul class="dropdown-menu">
      			<li class="dropdown-submenu" id="music">
     				<a tabindex="-1" class="text-left">IsMusic</a>
@@ -141,6 +144,7 @@
         <button type="submit" id="submitButton" class="btn btn-large ">Krillex</button>
         </form>
 
+       </gcse:search>
       {% if results %}
 
      
