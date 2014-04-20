@@ -11,7 +11,7 @@ def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
 	#url = "http://www.google."+domain+
 	#-inurl:htm -inurl:html intitle:"index of" "Last modified" mp3 
 	#"?intitle:index?%s %s last modified -html -wallywashis"
-	parameters = {'q':"%s -inurl:htm -inurl:html intitle: index of Last modified %s -wallywashis"%(type,query.encode('utf8')),'hl':lang,'num':num}
+	parameters = {'q':"%s -inurl:htm -inurl:html intitle:index  %s -wallywashis"%(type,query.encode('utf8')),'hl':lang,'num':num}
 	#parameters = {'q':query,'hl':lang}
 	print parameters["q"]
 	result = requests.get(url,params = parameters)
