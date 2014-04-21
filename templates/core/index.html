@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/search" lang="pt-br">
 <head>
-	<TITLE> Iskrillex.com Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
-<META NAME="DESCRIPTION" CONTENT="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
-<META NAME="ABSTRACT" CONTENT="O mecanismo de pesquisa é bem simples,.">
-<META NAME="KEYWORDS" CONTENT="Há casos nos quais você pode reproduzir o material antes de realizar o download.  Leia mais em: http://www.baixaki.com.br/download/iskrillex.htm#ixzz2apgqp9XL ◄▬C▬U▬R▬T▬A▬M▬.">
-<META NAME="ROBOT" CONTENT="All">
-<META NAME="RATING" CONTENT="general">
-<META NAME="DISTRIBUTION" CONTENT="global">
+  <TITLE> Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
+        <META NAME="DESCRIPTION" CONTENT="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
+        <META NAME="ABSTRACT" CONTENT="O mecanismo de pesquisa é bem simples,.">
+        <META NAME="ROBOT" CONTENT="All">
+        <META NAME="RATING" CONTENT="general">
+        <META NAME="DISTRIBUTION" CONTENT="global">
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	
-	<!--<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <![endif]-->	
-  <!--<link href='#' rel='icon' type='image/x-icon'/>--> <link href="{{ STATIC_URL }}img/favicon.ico"rel='shortcut icon' type='image/x-icon'/>
-  <link href='#' rel='apple-touch-icon' type='image/x-icon'/>
-  <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css">
-	<script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->  
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css">
+    <script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script> 
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-50250903-1', 'iskrillex.com');
+          ga('send', 'pageview');
+
+        </script>
 </head>
 
 <body>
@@ -56,7 +63,8 @@
         </script>
         <gcse:search>
        </gcse:search>
-        <h5 class="result">Buscador Classico</h5>
+
+        <h5 class="result">Buscador Clássico</h5>
         <form class="form-horizontal" action="." method="post" id="searchForm">
   			<div class="btn-group">
   				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -145,22 +153,20 @@
         <button type="submit" id="submitButton" class="btn btn-large ">Krillex</button>
         </form>
 
-      {% if results %}
-
-     
-    <div id="resultsDiv">   
-      <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
-       <!-- Selo Spider.Ad 120x50 -->
-      <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
-      <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-      <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
-      <!-- Fim da Spider.Ad TAG --> 
-  <div class="container-fluid">
-          <ul class="unstyled span8">
-          {% for url in results %}
-            <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
-          {% endfor %}
-          </ul> 
+      {% if results %}     
+      <div id="resultsDiv">   
+          <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
+             <!-- Selo Spider.Ad 120x50 -->
+            <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
+            <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
+            <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
+            <!-- Fim da Spider.Ad TAG --> 
+            <div class="container-fluid">
+                <ul class="unstyled span8">
+                {% for url in results %}
+                  <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+                {% endfor %}
+                </ul> 
           </div>
       {% endif %}
       </div>
