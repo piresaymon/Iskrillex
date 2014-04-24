@@ -6,7 +6,7 @@ import requests
 #def unquote(value):
 #    return unquote(value)
 #make the search
-def doSearch(query, type,lang = "pt-BR", domain="com.br",num=30):
+def doSearch(query, type,lang = "pt-BR", domain="com",num=30):
 	url = "http://www.google."+domain+"/search"
 	#url = "http://www.google."+domain+
 	#-inurl:htm -inurl:html intitle:"index of" "Last modified" mp3 
