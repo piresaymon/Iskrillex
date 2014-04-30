@@ -31,7 +31,7 @@ body {
    bottom:0;
    width:100%;
    height:60px;   /* Mesma Altura do Rodapé */
-   background:#1F1F1F;
+   background:#FAFAF8;
 }
 .clearfix {
   *zoom: 1;
