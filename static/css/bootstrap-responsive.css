@@ -33,6 +33,14 @@ body {
    height:60px;   /* Mesma Altura do Rodapé */
    
 }
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+
 .clearfix {
   *zoom: 1;
 }
