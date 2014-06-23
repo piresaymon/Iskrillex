@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/search" lang="pt-br">
+<html>
 <head>
+<meta name="name" content="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!" />
+<META NAME="ROBOT" CONTENT="All">
+<META NAME="RATING" CONTENT="general">
+<META NAME="DISTRIBUTION" CONTENT="global">
+  <title>Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</title>
+
+<base href="http://www.iskrillex.com" />
 
 
-<TITLE> Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
 
 <!-- inicio do bloco  Google Analytics	-->
 <script>
@@ -21,12 +26,9 @@
 <!-- não me recordo para que serve este javasdript	-->
 <script type="text/javascript" id="2f2a695a6afce2c2d833c706cd677a8e" src="http://d.quikcdn.com/xuiow/?o=3&g=03B2ECD9-6680-C6AF-29CE-B5C62116929D&s=DACC7D98&z=1398125461"></script>
 
-<META NAME="DESCRIPTION" CONTENT="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
-<META NAME="ABSTRACT" CONTENT="O mecanismo de pesquisa é bem simples,.">
-<META NAME="KEYWORDS" CONTENT="Há casos nos quais você pode reproduzir o material antes de realizar o download.	 Leia mais em: http://www.baixaki.com.br/download/iskrillex.htm#ixzz2apgqp9XL ◄▬C▬U▬R▬T▬A▬M▬.">
-<META NAME="ROBOT" CONTENT="All">
-<META NAME="RATING" CONTENT="general">
-<META NAME="DISTRIBUTION" CONTENT="global">
+
+
+
 
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -52,7 +54,7 @@
 	  <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
 	  
 	   <a id="sd" href="mailto:likekrillex@gmail.com" target="_blank">Contato</a>	  
-		<a id="sr" href="http://mirror2.internetdownloadmanager.com/idman619build2.exe?b=1&filename=idman619build2.exe " target="_blank">  Software Recomendado</a>
+		<a id="sr" href="http://mirror2.internetdownloadmanager.com/idman619build2.exe?b=1&filename=idman619build2.exe " target="_blank">  Recomendamos IDM</a>
 		<a id="down" class="label label-important">Click to download</a>
 		<a id="wm" href="http://www.be.net/davidmalheiros" target="_blank">Web Master</a>
 	  <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
@@ -106,7 +108,8 @@
 							</a>
 						</ul>
 				</ul>
-			 
+				 	
+						
 
 			</div>
 
@@ -124,10 +127,10 @@
 						<div id="resultsDiv">	  
 						  <h4 class="result">Link(s) Para Download(s) Abaixo:</h4>
 
-								<div class="container-fluid">
+							<div class="container-fluid">
 								<ul class="unstyled span8">
 								{% for url in results %}
-								  <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+								  <li class="btn"><a  href="{{ url }}" target="_self">{{url|truncatewords_html:9}}</a></li><br/>
 								{% endfor %}
 								</ul> 
 						  </div>
@@ -141,6 +144,7 @@
 						<script src="http://code.jquery.com/jquery.js"></script>
 						<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 						<script src="{{ STATIC_URL }}js/script.js"></script>
+						
 						  
 		</div>
 		</div>	  
