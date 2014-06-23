@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>Iskrillex</title>
@@ -27,18 +27,15 @@
   <!--main-->
   </section>
   <section id="results">  
- <script src="http://code.jquery.com/jquery.js"></script>
-  
-
     {% if results %}
     <h3>Link(s) Para Download(s) Abaixo</h3>
-      {% for url in results %} 
-     <ul><a href="{{url}}" target="_blank">{{url}}</a></ul>       
+      {% for url in results %}        
+      <ul><a href="{{url}}" target="_blank">{{url}}</a></ul>       
       {% endfor %}
     {% endif %}
-  </section>  
+  </section>
   <!--wrapper-->
-  
+  <script src="http://code.jquery.com/jquery.js"></script>
  </div>
 </body>
 </html>
