@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/search" lang="pt-br">
+<html >
 <head>
 	<TITLE> Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
 <META NAME="DESCRIPTION" CONTENT="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
@@ -147,7 +147,11 @@
       <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
           <ul class="unstyled span8">
           {% for url in results %}
-            <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+            <script language="JavaScript" type="text/javascript">
+                window.location=<li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+              
+            </script>
+
           {% endfor %}
           </ul> 
           </div>
