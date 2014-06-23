@@ -150,8 +150,7 @@
           {% for url in results %}
           
             <li class="btn"><a  href = "{{ url }}" target ="_blank">{{url|truncatewords_html:9}}</a></li><br/>
-            <script language="JavaScript" type="text/javascript">
-            window.location="{{ url }}" </script>
+            
 
           {% endfor %}
           </ul> 
