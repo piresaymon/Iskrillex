@@ -146,8 +146,9 @@
     <div id="resultsDiv">   
       <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
           <ul class="unstyled span8">
+
           {% for url in results %}
-            <li class="btn"><a "{{ url }}" target="_top">{{url|truncatewords_html:9}}</a></li><br/>
+            <li class="btn"><a "{{ url }}" >{{url|truncatewords_html:9}}</a></li><br/>
           {% endfor %}
           </ul> 
           </div>
