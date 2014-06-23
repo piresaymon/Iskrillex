@@ -147,7 +147,7 @@
       <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
           <ul class="unstyled span8">
           {% for url in results %}
-            <li class="btn"><a  href="http://www.iskrillex.com/?" href= "{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+            <li class="btn"><a "{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
           {% endfor %}
           </ul> 
           </div>
