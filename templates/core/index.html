@@ -1,28 +1,8 @@
-<!--
-Copyright (C) <2014>  <Saymon Pires da Silva>
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
--->
-
 <!DOCTYPE html>
-<html >
+<html itemscope itemtype="http://schema.org/search" lang="pt-br">
 <head>
-	<TITLE> Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
-  
-<META NAME="DESCRIPTION" CONTENT="Ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
+	<TITLE>Iskrillex.com download. Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados dos sites..</TITLE>
+<META NAME="DESCRIPTION" CONTENT="ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
 <META NAME="ABSTRACT" CONTENT="O mecanismo de pesquisa é bem simples,.">
 <META NAME="KEYWORDS" CONTENT="Há casos nos quais você pode reproduzir o material antes de realizar o download.  Leia mais em: http://www.baixaki.com.br/download/iskrillex.htm#ixzz2apgqp9XL ◄▬C▬U▬R▬T▬A▬M▬.">
 <META NAME="ROBOT" CONTENT="All">
@@ -31,41 +11,44 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<link rel="shortcut icon" href="../../static/img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon" />
 	<!--<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	  <![endif]-->	
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css">
-	<script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script>  
-  
+	<script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script> 
 </head>
 <body>
+<script src="http://code.jquery.com/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/script.js"></script>
 <div class="tudo">
   <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
-      <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;"> 
-        <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"> Contato Email </a>
+      <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
+       
+        <a id="sd" href="mailto:likekrillex@gmail.com" target="_blank">Contato</a>
         <a id="sr" href="http://www.internetdownloadmanager.com/download.html" target="_blank">Software Recomendado</a>
-          
+        <a id="down" class="label label-important">Click to download</a>
         <a id="wm" href="http://www.be.net/davidmalheiros" target="_blank">Web Master</a>
-        <a id="twitter" href="https://twitter.com/is_krillex" name="twitter" target="_blank" ></a>
-    <a id="face" href="https://www.facebook.com/iskrillexme" target="_blank"></a>    
+      <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
+      <a id="face" href="https://www.facebook.com/iskrillexme" target="_blank"></a>
     </div>
   </div>
   <div class="conteudo">
   <div class="container-fluid pagination-centered">  
   	<div class="row-fluid">
-      <div class="span12 spacetop"> <a href="http://iskrillex.herokuapp.com/" target="_self">
-      <img src="file:///D|/GitHub/Iskrillex/static/img/logo.png"/></a>
-        <form class="form-horizontal" action="file:///D|/GitHub/Iskrillex/templates/core/." method="post" id="searchForm">
+      <div class="span12 spacetop">
+        <img src="{{ STATIC_URL }}img/logo.png"/>
+        <form class="form-horizontal" action="." method="post" id="searchForm">
   			<div class="btn-group">
   				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
     			<span class="caret"></span>
   				</a>
  	 		<ul class="dropdown-menu">
      			<li class="dropdown-submenu" id="music">
-    				<a tabindex="-1" href="#"class="text-left">IsMusic</a>
+    				<a tabindex="-1" class="text-left">IsMusic</a>
     				<ul class="dropdown-menu text-left" style="padding-left:10px;">
 						<a><li><label class="radio">
  						 <input type="radio" name="typeGroup" id="optionsRadios1" value=".mp3" checked>
@@ -157,18 +140,17 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
       {% if results %}
 
+      <!-- Selo Spider.Ad 120x50 -->
+      <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
+      <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
       <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
   <div class="container-fluid">
     <div id="resultsDiv">   
       <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
           <ul class="unstyled span8">
-
           {% for url in results %}
-          
-            <li class="btn"><a  href = "{{ url }}" target ="_blank">{{url|truncatewords_html:9}}</a></li><br/>
-            
-
+            <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
           {% endfor %}
           </ul> 
           </div>
@@ -179,9 +161,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
         <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
         <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdRetangulo"></script>
         <!-- Fim da Spider.Ad TAG -->   
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="file:///D|/GitHub/Iskrillex/templates/core/{{ STATIC_URL }}js/bootstrap.min.js"></script>
-        <script src="file:///D|/GitHub/Iskrillex/templates/core/{{ STATIC_URL }}js/script.js"></script>
+        
           
         </div>
         </div>    
