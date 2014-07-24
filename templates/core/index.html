@@ -140,14 +140,17 @@
       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
       <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
+      
   <div class="container-fluid">
-    <div id="resultsDiv">   
-      <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
-          <ul class="unstyled span8">
-          {% for url in results %}
-            <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
-          {% endfor %}
-          </ul> 
+    <div id="resultsDiv">
+<blockquote>
+  <h3 class="result"><strong style="text-align: center; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; color: #C30307;">Link(s) Para Download(s) Abaixo:</strong></h3>
+</blockquote>
+<ul>
+  {% for url in results %}
+  <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+  {% endfor %}
+</ul>
           </div>
       {% endif %}
       </div>
