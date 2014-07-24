@@ -43,10 +43,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA -->
   <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
       <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
        
-        <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank">Email Contato</a>
-        <a id="sr" href="http://www.internetdownloadmanager.com/download.html" target="_blank">Software Recomendado</a>
-        
-        <a id="wm" href="http://www.be.net/davidmalheiros" target="_blank">Web Master</a>
+        <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"> Email Contato </a>
+        <a id="sr" href="http://www.internetdownloadmanager.com/download.html" target="_blank"> Software Recomendado</a>    
+        <!--<a id="wm" href="http://www.be.net/davidmalheiros" target="_blank">Web Master</a>-->
+        <a id="wm" href="https://github.com/saymonpires/Iskrillex" target="_blank">Codigo Fonte/ Open Source</a>
       <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
       <a id="face" href="https://www.facebook.com/iskrillexme" target="_blank"></a>
     </div>
@@ -153,20 +153,20 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA -->
         </form>
 
       {% if results %}
-
-      <!-- Selo Spider.Ad 120x50 -->
-      <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50" scrolling="no" frameborder="0"></iframe>
       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
       <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
       <!-- Fim da Spider.Ad TAG --> 
+      
   <div class="container-fluid">
-    <div id="resultsDiv">   
-      <h3 class="result">Link(s) Para Download(s) Abaixo:</h3>
-          <ul class="unstyled span8">
-          {% for url in results %}
-            <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
-          {% endfor %}
-          </ul> 
+    <div id="resultsDiv">
+<blockquote>
+  <h3 class="result"><strong style="text-align: center; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; color: #C30307;">Link(s) Para Download(s) Abaixo:</strong></h3>
+</blockquote>
+<ul>
+  {% for url in results %}
+  <li class="btn"><a  href="{{ url }}" target="_blank">{{url|truncatewords_html:9}}</a></li><br/>
+  {% endfor %}
+</ul>
           </div>
       {% endif %}
       </div>
