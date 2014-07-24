@@ -1,0 +1,19 @@
+/*arquivo em css*/
+ 
+ *boby{
+ margin:0;   
+ padding:0;
+ 
+	#rodapeEsticado{
+	width:100%;
+	height:125px;
+	background-color:#000;
+	 } 
+
+	#rodapeInterno{
+		width:984px;
+		height:125px;
+		background-color:#000;
+		margin:0 auto;
+	} 		 
+}
