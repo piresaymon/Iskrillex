@@ -1,19 +1,5 @@
-"""Copyright (C) <2014>  <Saymon Pires da Silva>
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"""
-# -*- coding: latin1 -
+#!/usr/bin/env python
+# coding: utf-8
 from BeautifulSoup import BeautifulSoup
 import requests
 #import urllib
@@ -26,7 +12,7 @@ def doSearch(query, type,lang = "pt-BR", domain="com",num=30):
 	#url = "http://www.google."+domain+
 	#-inurl:htm -inurl:html intitle:"index of" "Last modified" mp3 
 	#"?intitle:index?%s %s last modified -html -wallywashis"
-	parameters = {'q':"%s -inurl:htm -inurl:html intitle:index  %s -wallywashis"%(type,query.encode('utf8')),'hl':lang,'num':num}
+	parameters = {'q':"%s -inurl:htm -inurl:html intitle:index  %s -wallywashis -mmnt.net -unknownsecret"%(type,query.encode('utf8')),'hl':lang,'num':num}
 	#parameters = {'q':query,'hl':lang}
 	print parameters["q"]
 	result = requests.get(url,params = parameters)

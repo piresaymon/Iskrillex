@@ -223,10 +223,10 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #333333;*/
   background-color: #ffffff;
   overflow-x:hidden;
 }
@@ -6161,7 +6161,7 @@ a.badge:focus {
 /*-------------------------------------------------------------*/
 
 .spacetop {
-	padding-top:250px;
+	padding-top:64px;
 }
 
 #resultsDiv ul {

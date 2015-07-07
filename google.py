@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf-8
 
 # Python bindings to the Google search engine
 # Copyright (c) 2009-2012, Mario Vilas

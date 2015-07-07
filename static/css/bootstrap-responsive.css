@@ -13,33 +13,24 @@ body {
    margin:0;
    padding:0;
    height:100%;
+   font-family: sans-serif;
+   font-size: 14;
+   font-style: initial;
+   color: dimgrey;
+
 }
 .tudo {
    min-height:100%;
    position:relative;
 }
 .topo {
-   background:#FAFAF8;
-   padding:10px;
-}
-.conteudo {
-   padding:10px;
-   padding-bottom:60px;   /* Mesma Altura do Rodapé */
-}
-.rodape {
    position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Mesma Altura do Rodapé */
+   bottom:100;
    
 }
-
-.footer {
-  position:absolute;
-  bottom:0;
-  width:100%;
+.conteudo {
+   
 }
-
 
 .clearfix {
   *zoom: 1;
@@ -846,4 +837,39 @@ body {
     height: auto !important;
     overflow: visible !important;
   }
+}
+
+#rodape{
+    text-align: center;
+    border-top: 1px solid #606060;
+    background: black;
+    color:white;
+    
+}
+
+figure.foto-logo {
+    position: relative;
+     
+}
+
+figure.foto-logo img{
+    width: auto;
+    height: auto;
+}
+
+
+figure.foto-logo{
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    transition: opacity 1s;
+    
+}
+
+figure.foto-logo:hover{
+opacity: 1;
+    
 }
