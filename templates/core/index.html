@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <TITLE> Iskrillex! Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados
@@ -19,14 +19,26 @@
     <![endif]-->
 
     <link rel="icon" type="image/png" href="../../static/img/seal.png"/>
+        
+    <!-- CSS -->
+        <link href='../../static/css/styles.css' rel='stylesheet'>    
     <link rel="stylesheet" href="../../static/css/bootstrap.css">
     <link rel="stylesheet" href="../../static/css/bootstrap-responsive.css">
-
+       
+        
+    <!-- JS -->    
     <script type="text/javascript" src="http://updateyourbrowser.net/asn.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="../../static/js/bootstrap.min.js"></script>
     <script src="../../static/js/script.js"></script>
-
+    <script src='../../static/js/elevator.js'></script> 
+    <script src='../../static/js/elevator.min.js'></script>
+    <script src='../../static/js/redesocial.js'></script>
+    
+<!-- Scripts de propaganda -->
+<script type="text/javascript" src="http://carnage1301.spider.ad?id=33020" ></script>
+<!-- fim dos Scripts de propaganda -->         
+        
     <!--Detectando adBlock ou similares  -->
     <script src="../../static/js/advertisement.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -35,49 +47,51 @@
                 alert("Por Favor! Desative o ADBLOCK em nosso Aplicativo ou faça uma doação! Para ajudar a manter-lo on-Line @^@");
                 //Nem pense em esconder conteúdo! :O
               }
-
-
     </script>
 
 
 </head>
 <body>
-    <!-- Scripts de propaganda -->
-<script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=39131"></script>
-<script async="true" type="text/javascript" src="http://venom1301.spider.ad?id=15687"></script>
-<script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=33020"></script>
-<!-- fim dos Scripts de propaganda -->
+   
 
 <div class="tudo">
+    
+    <a class="github-link" href="https://github.com/saymonpires/Iskrillex" target="_blank">
+            <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    
     <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
         <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
-            <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"> Contact </a>
+            <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"> Contato </a>
             <a id="sr"
                href="http://jdownloader.org/pt/download/offline"
                target="_blank"> Software Recomendado </a>
-            
-            
             <a id="wm" href="https://github.com/saymonpires/Iskrillex" target="_blank"> Código Fonte / Open Source
             </a>
-            <figure class="foto-logo">
+        </div>
+        <!--
+        <figure class="foto-logo">
             <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
             <a id="face" href="https://www.facebook.com/isKrillexMusic" target="_blank"></a>
             </figure>
-                </div>
+        -->
+        
     </div>
     <div class="conteudo">
         <div class="container-fluid pagination-centered">
             <div class="row-fluid">
                 <div class="span12 spacetop">
+                    
                      <figure class="foto-logo">
-                    <a href="https://iskrillex.herokuapp.com">
+                    <a href="http://iskrillex.herokuapp.com">
                         <img src="../../static/img/logo.png" alt="Logo Iskillex"/>
                     </a>
+                         
                          <a href="https://affiliates.mozilla.org/referral/70959/" target="_blank">
                     <img src="https://affiliates.mozilla.org/media/uploads/banners/a3acce222ead4b4957d0f3764a93b40da68fb236.png" alt="Firefox Aurora" title="Firefox Aurora">
-                    </figure>
-                     
-                    </a>
+                             </a>
+                         </figure>
+                    
                     <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                     <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
                         <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -192,6 +206,8 @@
                                     </ul>
                                 </li>
                             </ul>
+                        
+                            
                         </div>
                         <input type="text" name="q" id="q" placeholder="Buscar" class="input-xxlarge"/>
                         {% csrf_token %}
@@ -199,31 +215,26 @@
                         <br>
                         <button type="submit" id="submitButton" class="btn btn-large "> Krillex </button>
                     </form>
-
-                    {% if results %}
-
-
+                    <div class="fb-like" data-href="https://www.facebook.com/isKrillexMusic" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+                  <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
+<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=15687.divSpdRetangulo" ></script>
+<!-- Fim da Spider.Ad TAG -->
+                        
+                    </div>
+                    {% if results %} 
                     <div id="resultsDiv">
-                        <h3 class="result"> Obrigado por usa ISKRILLEX! <br/>Link(s) Para Download(s) Abaixo: </h3>
+                        
+                        <div id="divSpdInText">
+	                     <h3 class="result"> Obrigado por usa ISKRILLEX! <br/>Link(s) Para Download(s) Abaixo: </h3>
+                        </div>
+                                        
                         <!-- <script type="text/javascript"> alert("Obrigado por usa ISKRILLEX!!! Role a Pagina Para Baixo!")
                         </script>-->
-                        <div class="div">
-
-
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-                            <script type="text/javascript"
-                                    src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
-                            
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website https://iskrillex.herokuapp.com -->
-                            <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=39131.divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
-                            
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website http://iskrillex.herokuapp.com -->
-                            <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=33020.divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
-                            
-                            
+                         
+                        <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
+<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=15687.divSpdSuperBanner"></script>
+<!-- Fim da Spider.Ad TAG -->
+                        <div class="div">                                               
                             <!-- Selo Spider.Ad 120x50 -->
                             <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50"
                                     scrolling="no" frameborder="0"></iframe>
@@ -241,56 +252,55 @@
                                     </h4>
                                     </li>
                                     {% endfor %}
-                                    </ul>
-
-
-                                    </ol>
+                    
+                          <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://iskrillex.herokuapp.com -->
+<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=33020.divSpdRetangulo"></script>
+<!-- Fim da Spider.Ad TAG -->
+                                </ol>
+                    
                                   {% endif %}
-                            </div>
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-                            <script type="text/javascript"
-                                    src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
-                            
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website https://iskrillex.herokuapp.com -->
-                            <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=39131.divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
-                            
-                            <!-- Spider.Ad TAG - Formato SuperBanner - Website http://iskrillex.herokuapp.com -->
-                            <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=33020.divSpdSuperBanner"></script>
-                            <!-- Fim da Spider.Ad TAG -->
+                        
+                            </div>                                                       
                             
                         </div>
                     </div>
-
-
-                    <!-- Spider.Ad TAG - Formato Banner Arroba - Website https://iskrillex.herokuapp.com -->
-                    <script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=39131.divSpdRetangulo"></script>
-                    <!-- Fim da Spider.Ad TAG -->
-
-                    <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
-                    <script type="text/javascript"
-                            src="http://lizard1301.spider.ad/spd_display?id=15687&arg=divSpdRetangulo"></script>
-                    <!-- Fim da Spider.Ad TAG -->
-                    
-                    <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://iskrillex.herokuapp.com -->
-                    <script type="text/javascript"
-                            src="http://lizard1301.spider.ad/spd_display?p1=33020.divSpdRetangulo">
-                    </script>
-                    <!-- Fim da Spider.Ad TAG -->
-
-
                 </div>
             </div>
-        </div>
+        
+        
+        <div class="do-the-thing">
+                <div class="elevator">
+                    <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
+                        <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
+                        <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
+                    </svg>
+                    Volte ao Topo
+                </div>
+            </div>
     </div>
-    <footer  id="rodape">
-        COPYLEFT <img src="../../static/img/Copyleft.png" title="Copyletf" alt="Copyleft"/>
+    </div>
+    </div>
+         <script>
+
+            // Simple elevator usage.
+            var elementButton = document.querySelector('.elevator');
+            var elevator = new Elevator({
+                element: elementButton,
+                mainAudio: '../../static/music/elevator.mp3', // Music from http://www.bensound.com/
+                endAudio:  '../../static/music/ding.mp3'
+            });
+
+        </script>
+    <footer  id="rodape">        
         ISKRILLEX GROUP 2014 - 2015. <br/>
-        BECAUSE FREE IsUPER YUMMY!
+        BECAUSE FREE IsUPER YUMMY!<br/>
+        <div id="divSpdInPix"> 
+       <figure>     
+       <img src="../../static/img/Copyleft.png" title="Copyletf" alt="Copyleft"/>
+           
+       </figure> 
+            </div>
     </footer>
-</div>
-
-
+       
 </body>
 </html>
