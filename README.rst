@@ -31,7 +31,7 @@ Install pip and virtualenv for Ubuntu 10.10 Maverick and newer
 New systems equal or greater than the Ubuntu 10.10
 
  sudo apt-get install python-pip python-dev build-essential
- sudo pip pip install --upgrade
+ sudo pip install --upgrade
  sudo pip install --upgrade virtualenv
 ================================================== ==========
 
