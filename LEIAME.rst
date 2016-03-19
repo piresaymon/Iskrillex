@@ -1,5 +1,5 @@
 Para Rodar Localmente a iskrillex!
-===================================
+==================================
 
 Siga as instrução dos links abaixo;
 Nota: não é necessario ir para a proxima pagina, ou seja para cada etapa completada pule para o proximo
@@ -27,7 +27,7 @@ https://devcenter.heroku.com/articles/getting-started-with-python#introduction
 Voce deve instalar segundo o python 2, cada um segundo a sua plataforma de sistema operacional, no caso do linux em sua maioria ja vem instalado. Para conferir se está instalado basta abrir o terminal de sua preferencia e digital o comando
 
 python --version
-============================================================
+================
 
 Logo em seguida você deve instalar o pip do python, busque na internet a forma correta para cada sistema operacional, caso esteja usando versões do Linux Ubuntu ou seus derivados segue os comandos de instalação;
 
@@ -45,12 +45,12 @@ For older versions of Ubuntu
 Install Easy Install
 
  sudo apt-get install python-setuptools python-dev build-essential 
-============================================================
+=================================================================
 
 Install pip
 
  sudo easy_install pip 
-============================================================
+======================
 
 Install virtualenv
 
@@ -67,9 +67,12 @@ Nota: o Virtualenv é importante para testes de aplicações que tenhão recurso
 utilizando Virtualenv você poderar testar seu aplicativo e suas dependencias sem correr o risco de interferir no seus outro projetos.
 
 Entre na Pasta onde se encontra o projeto Iskrillex e inicie o processo com o Virtualenv
+ 
  pip install virtualenv 
  =======================
- Note: voce acabou de instalar o virtualenv no sistema;
+ 
+ Note: você acabou de instalar o virtualenv no sistema;
+ 
  Então, Ative o  virtualenv no projeto:
  
 Se estiver usando  Windows, rode o seguinte comando:
@@ -97,11 +100,11 @@ Responda com yes.
 Agora inicie a sua aplicação localmente usando heroku local, que foi instalado como parte do conjunto de  Toolbelt:Com o comando.
 
 heroku local web
-===================
+================
 
 Pronto agora basta abrir seu navegador de preferancia e digitar:
 
 http://localhost:5000
-=======================
+=====================
 
-para encerra o processo no terminal pressione Ctrl+C 
+Para encerra o processo no terminal pressione Ctrl+C 
