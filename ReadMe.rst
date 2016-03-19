@@ -35,7 +35,7 @@ New systems equal or greater than the Ubuntu 10.10
  sudo apt-get install python-pip python-dev build-essential
  sudo pip install --upgrade
  sudo pip install --upgrade virtualenv
-================================================== ==========
+============================================================
 
 New systems to lower the Ubuntu 10.10
 For older versions of Ubuntu
@@ -43,12 +43,12 @@ For older versions of Ubuntu
 Install Easy Install
 
  sudo apt-get install python-setuptools python-dev build-essential
-================================================== ==========
+==================================================================
 
 Install pip
 
  sudo easy_install pip
-================================================== ==========
+======================
 
 Install virtualenv
 
@@ -80,12 +80,12 @@ venv\Scripts\activate.bat
 If not using Window, run the following command:
 
 source venv/bin/activate
-==========================
+========================
 
 At this point your this isolated system folder and can now install the project dependency; With the command:
 
 pip install -r requirements.txt
-================================
+===============================
 
 The application is almost ready to start locally. Django uses local resources, so first, you will need to run collectstatic:
 
@@ -97,7 +97,7 @@ Respond with yes.
 Now start your application locally using heroku site, which was installed as part of the set of Toolbelt: With the command.
 
 heroku web site
-===================
+===============
 
 Ready now just open your preferancia browser and type:
 
