@@ -3,6 +3,8 @@ Follow the instruction of the links below;
 Note: it is not necessary to go to the next page, ie for each completed skip to the next step
 link, and not the next page link;
 
+Recommends Linux Mint >= 16 Version
+
 Pre-requirements:
 Having a heroku account
 
@@ -118,6 +120,8 @@ Para Rodar Localmente a iskrillex!
 Siga as instrução dos links abaixo;
 Nota: não é necessario ir para a proxima pagina, ou seja para cada etapa completada pule para o proximo
 link, e não para a proxima pagina do link;
+
+Recomendado Linux Mint versões 16 ou superiores;
 
 Pre-Requisitos:
 Ter uma conta heroku
