@@ -1,7 +1,8 @@
-To Rotate Locally the IsKrillex;
-Follow the instruction of the links below;
-Note: it is not necessary to go to the next page, ie for each completed skip to the next step
-link, and not the next page link;
+      To Rotate Locally the IsKrillex;
+      Follow the instruction of the links below;
+      
+      Note: it is not necessary to go to the next page, ie for each completed skip to the next step
+      link, and not the next page link;
 
 Recommends Linux Mint >= 16 Version
 
