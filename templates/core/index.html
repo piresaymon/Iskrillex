@@ -3,309 +3,356 @@
 <head>
     <title> Iskrillex! Evite esperas, captchas e cadastros desnecessários buscando os arquivos direto na base de dados
         dos sites..</title>
-    <meta name ="description"
-          content ="Ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
+    <meta name ="description" content ="Ótima ferramenta, sempre acho o que preciso.. sem cadastros, sem protetor de links, sem espera, nos variados formatos (ISO, RAR, EXE e etc..)download direto!!">
     <meta name="ABSTRACT" content ="O mecanismo de pesquisa é bem simples,.">
-    <meta name="KEYWORDS"
-          CONTENT="Downloads, musica, videos, skrillex, iskema, facebook, piratebay, mega, ">
+    <meta name="KEYWORDS" CONTENT="Downloads, musica, videos, skrillex, iskema, facebook, piratebay, mega">
     <meta name="ROBOT" content ="All">
     <meta name="RATING" content ="general">
     <meta name="DISTRIBUTION" content ="global">
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="author" content="Saymon Pires">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-
+    <link rel="icon" type="image/png" href="../../static/img/seal.png"/>
     <!--<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- link all the scripts -->
+    <script  src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="http://updateyourbrowser.net/asn.js"> </script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+       <!-- link all the styles -->
 
-    <link rel="icon" type="image/png" href="../../static/img/seal.png"/>
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/glyphicons-halflings-regular.eot" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/glyphicons-halflings-regular.ttf" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2" media="screen" title="no title" charset="utf-8">
     <!-- CSS -->
-    <link href='../../static/css/styles.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../static/css/Semantic-UI-CSS-master/semantic.min.css">
+    <link rel='stylesheet' href='../../static/css/styles.css'>
     <link rel="stylesheet" href="../../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="../../static/css/normalize.css">
+    <link rel="stylesheet" href="../../static/css/animate.css">
 
     <!-- JS -->
-    <script  src="http://updateyourbrowser.net/asn.js"></script>
-    <script  src="http://code.jquery.com/jquery.js"></script>
-    <script  src="../../static/js/bootstrap.min.js"></script>
     <script   src="../../static/js/script.js"></script>
     <script  src='../../static/js/elevator.js'></script>
     <script src='../../static/js/elevator.min.js'></script>
+    <script src="../../static/js/semantic.min.js"></script>
+
     <!--Detectando adBlock ou similares  -->
     <script src="../../static/js/advertisement.js" type="text/javascript"></script>
 
+
+
 <!-- Scripts de propaganda -->
-<script async="true" type="text/javascript" src="http://venom1301.spider.ad?id=15687"></script>
-<script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=33020"></script>
-<script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=39131"></script>
+<!-- <script async="true" type="text/javascript" src="http://venom1301.spider.ad?id=15687"></script> -->
+<!-- <script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=33020"></script> -->
+<!-- <script async="true" type="text/javascript" src="http://carnage1301.spider.ad?id=39131"></script> -->
 <!-- fim dos Scripts de propaganda -->
-
-
-
-
-
 </head>
 <body>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="http://wwww.iskrillex.herokuapp.com"><i class="spy icon big"></i>IsKrillex</a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"><i class="send outline icon big animated infinite pulse"></i>
+                      CONTATO</a>
+                  </li>
+                  <li>
+                    <a id="sr" href="http://jdownloader.org/pt/download/offline" target="_blank"><i class="angellist icon big animated infinite swing"></i>
+                      SOFTWARE RECOMENDADO</a>
+                  </li>
+                  <li>
+                    <a id="wm" href="https://github.com/saymonpires/Iskrillex" target="_blank"><i class="code outline icon big animated infinite rubberBand"></i>
+                      CÓDIGO FONTE</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="https://www.facebook.com/isKrillexMusic/" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/is_krillex" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class="tudo">
+      <div class="conteudo">
+          <div class="container-fluid pagination-centered">
+              <div class="row-fluid">
+                  <div class="span12 spacetop">
+
+                       <figure class="foto-logo animated flipInY img-responsive">
+                          <a href="http://iskrillex.herokuapp.com">
+                              <img src="../../static/img/logo.png" alt="Logo Iskillex" title="Logo Iskillex"/>
+                          </a>
+                       </figure>
+
+                      <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                      <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+                          <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                          <input type="hidden" name="currency" value="BRL"/>
+                          <input type="hidden" name="receiverEmail" value="piresaymon@gmail.com"/>
+                          <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-preto.gif"
+                            name="submit" alt="Ajude o Iskema A Crescer! Pague com PagSeguro - é rápido, grátis e seguro! "/>
+                      </form>
+                      <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
+                      <form class="form-horizontal" action="." method="post" id="searchForm">
+                          <div class="btn-group">
+                              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="server icon animated infinite jello"></i>Selecione
+                                  <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li class="dropdown-submenu btn-default" id="music">
+                                      <a tabindex="-1" class="text-left"><i class="music icon animated  pulse infinite"></i> IsMusic </a>
+                                      <ul class="dropdown-menu text-left" style="padding-left:5px;">
+                                          <a>
+                                            <li>
+                                              <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value="mp3" checked/>
+                                                  <i class="sound icon"></i>
+                                                  MP3
+                                              </label>
+                                            </li>
+                                          </a>
+
+                                          <a>
+                                            <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".flac"/>
+                                                  <i class="sound icon"></i>
+                                                  FLAC
+                                                </label>
+                                              </li>
+                                          </a>
+
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".wma"/>
+                                                  <i class="sound icon"></i>
+                                                  WMA
+                                              </label></li>
+                                          </a>
+
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".ogg"/>
+                                                  <i class="sound icon"></i>
+                                                  OGG
+                                              </label></li>
+                                          </a>
+
+                                      </ul>
+                                  </li>
+                                  <li class="dropdown-submenu btn-default" id="file">
+                                      <a tabindex="-1" href="#" class="text-left "><i class="disk outline icon animated  pulse infinite"></i> IsFile </a>
+                                      <ul class="dropdown-menu text-left" style="padding-left:5px;">
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".iso"/>
+                                                  <i class="game icon"></i>
+                                                  ISO
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".rar"/>
+                                                  <i class="archive icon"></i>
+                                                  RAR
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".cbr"/>
+                                                  <i class="file image outline icon"></i>
+                                                  HQ's
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                              <li><label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".pdf"/>
+                                                   <i class="file pdf outline icon"></i>
+                                                  PDF
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                            <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".apk"/>
+                                                  <i class="tablet icon"></i>
+                                                  APK(Android)
+                                              </label>
+                                            </li>
+                                          </a>
+                                          <a>
+                                            <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".exe"/>
+                                                   <i class="laptop icon"></i>
+                                                  EXE (NÃO RECOMENDADO)
+                                              </label>
+                                            </li>
+                                          </a>
+                                          <a>
+                                            <li>
+                                              <label class="radio">
+                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".xap"/>
+                                                 <i class="tablet icon"></i>
+                                                XAP(WINDOWS PHONE)
+                                            </label>
+                                          </li>
+                                        </a>
 
 
-<div class="tudo">
+                                      </ul>
+                                  </li>
+                                  <li class="dropdown-submenu btn-default" id="video">
+                                      <a tabindex="-1" href="#" class="text-left"><i class="record icon animated  pulse infinite"></i> IsVideo </a>
+                                      <ul class="dropdown-menu text-left " style="padding-left:5px;">
+                                          <a>
+                                              <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".avi"/>
+                                                  <i class="desktop icon"></i>
+                                                  AVI
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                              <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".mp4"/>
+                                                  <i class="desktop icon"></i>
+                                                  MP4 (Ver On-Line)
+                                              </label></li>
+                                          </a>
+                                          <a>
+                                              <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".mkv"/>
+                                                  <i class="desktop icon"></i>
+                                                  MKV
+                                              </label>
+                                            </li>
+                                          </a>
+                                          <a>
+                                              <li>
+                                                <label class="radio">
+                                                  <input type="radio" name="typeGroup" id="optionsRadios1" value=".mpeg"/>
+                                                  <i class="desktop icon"></i>
+                                                  MPEG
+                                              </label>
+                                            </li>
+                                          </a>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </div>
+                          <input type="search" name="q" id="q" placeholder="Selecione Um Formato E Busque" class="input-xxlarge" autofocus=""/>
+                          <br>
+                          {% csrf_token %}
+                          <br>
+                          <button type="submit" id="submitButton" class="btn btn-large "><i class="download icon"></i> <strong>Krillex</strong> <i class="magnet icon"></i> </button>
+                      </form>
 
-    <a class="github-link" href="https://github.com/saymonpires/Iskrillex" target="_blank">
-            <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-        </a>
+                      {% if results %}
+                      <div id="resultsDiv">
 
-    <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
-        <div class="container-fluid pagination-centered" style="background:#1F1F1F; height:30px;">
-            <a id="sd" href="mailto:piresaymon@gmail.com" target="_blank"> Contato </a>
-            <a id="sr"
-               href="http://jdownloader.org/pt/download/offline"
-               target="_blank"> Software Recomendado </a>
-            <a id="wm" href="https://github.com/saymonpires/Iskrillex" target="_blank"> Código Fonte / Open Source
-            </a>
+                          <div id="divSpdInText">
+  	                     <h4 class="result"> Obrigado Por Usa ISKRILLEX! <br/>Link(s) Para Download(s) Abaixo, Role a Pagina Para Ver Mais: </h4>
+                          </div>
+                            <div class="div img-responsive">
+                              <!-- Selo Spider.Ad 120x50 -->
+                              <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50"
+                                      scrolling="no" frameborder="0"></iframe>
+
+                              <div class="container-fluid">
+
+
+                                  <ol>
+                                      {% for url in results %}
+                                      <li>
+                                        <h4><a href="{{ url }}" target="_blank" title="Link Seguro">{{url|truncatewords_html:15}} <i class="download icon"></i></a>
+                                      </li>
+                                      <br/>
+                                      </h4>
+                                      </li>
+                                      {% endfor %}
+
+                                  </ol>
+
+                                    {% endif %}
+
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          <div class="do-the-thing">
+                  <div class="elevator">
+                      <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
+                          <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
+                          <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
+                      </svg>
+                      Volte ao Topo
+                  </div>
+              </div>
+      </div>
+      </div>
+      </div>
+           <script>
+
+              // Simple elevator usage.
+              var elementButton = document.querySelector('.elevator');
+              var elevator = new Elevator({
+                  element: elementButton,
+                  mainAudio: '../../static/music/elevator.mp3', // Music from http://www.bensound.com/
+                  endAudio:  '../../static/music/ding.mp3'
+              });
+
+          </script>
+
+      <footer  id="rodape">
+          ISKRILLEX GROUP 2014 - 2016. <br/>
+          BECAUSE FREE IsUPER YUMMY!<br/>
+          <div id="divSpdInPix">
+         <figure>
+         <img src="../../static/img/Copyleft.png" title="Copyletf" alt="Copyleft"/>
+         </figure>
         </div>
 
-        <figure class="foto-logo">
-            <a id="twitter" href="https://twitter.com/is_krillex" target="_blank"></a>
-            <a id="face" href="https://www.facebook.com/isKrillexMusic" target="_blank"></a>
-            </figure>
+      </footer>
 
-
-    </div>
-    <div class="conteudo">
-        <div class="container-fluid pagination-centered">
-            <div class="row-fluid">
-                <div class="span12 spacetop">
-
-                     <figure class="foto-logo">
-                    <a href="http://iskrillex.herokuapp.com">
-                        <img src="../../static/img/logo.png" alt="Logo Iskillex"  width="424" height="112" />
-                    </a>
-
-                         <a href="https://affiliates.mozilla.org/referral/70959/" target="_blank">
-                    <img src="https://affiliates.mozilla.org/media/uploads/banners/a3acce222ead4b4957d0f3764a93b40da68fb236.png" alt="Firefox Aurora" title="Firefox Aurora" />
-                             </a>
-                         </figure>
-
-                    <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-                    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-                        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-                        <input type="hidden" name="currency" value="BRL"/>
-                        <input type="hidden" name="receiverEmail" value="piresaymon@gmail.com"/>
-                        <input type="image"
-                               src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-preto.gif"
-                               name="submit"
-                               alt="Ajude o Iskema A Crescer! Pague com PagSeguro - é rápido, grátis e seguro! "/>
-                    </form>
-                    <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-
-                    <form class="form-horizontal" action="." method="post" id="searchForm">
-                        <div class="btn-group">
-                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu" id="music">
-                                    <a tabindex="-1" class="text-left"> IsMusic </a>
-                                    <ul class="dropdown-menu text-left" style="padding-left:10px;">
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value="mp3"
-                                                       checked/>
-                                                MP3
-                                            </label></li>
-                                        </a>
-
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".wma"/>
-                                                WMA
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".flac"/>
-                                                Flac
-                                            </label></li>
-                                        </a>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu" id="file">
-                                    <a tabindex="-1" href="#" class="text-left"> IsFile </a>
-                                    <ul class="dropdown-menu text-left" style="padding-left:10px;">
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".iso"/>
-                                                ISO
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".rar"/>
-                                                RAR
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".cbr"/>
-                                                HQs
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".pdf"/>
-                                                PDF
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".apk"/>
-                                                APK(Android)
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".exe"/>
-                                                EXE
-                                            </label></li>
-                                        </a>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu" id="video">
-                                    <a tabindex="-1" href="#" class="text-left"> IsVideo </a>
-                                    <ul class="dropdown-menu text-left" style="padding-left:10px;">
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".avi"/>
-                                                AVI
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".mp4"/>
-                                                MP4
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".mkv"/>
-                                                MKV
-                                            </label></li>
-                                        </a>
-                                        <a>
-                                            <li><label class="radio">
-                                                <input type="radio" name="typeGroup" id="optionsRadios1" value=".mpeg"/>
-                                                MPEG
-                                            </label></li>
-                                        </a>
-                                    </ul>
-                                </li>
-                            </ul>
-
-
-                        </div>
-                        <input type="text" name="q" id="q" placeholder="Buscar" class="input-xxlarge"/>
-                        {% csrf_token %}
-                        <br>
-                        <br>
-                        <button type="submit" id="submitButton" class="btn btn-large "> Krillex </button>
-                    </form>
-                    <div class="fb-like" data-href="https://www.facebook.com/isKrillexMusic" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
-  <!-- Spider.Ad TAG - Formato Banner Arroba - Website http://www.iskrillex.com -->
-<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=15687.divSpdRetangulo"></script>
-<!-- Fim da Spider.Ad TAG -->
-
-                    </div>
-                    {% if results %}
-                    <div id="resultsDiv">
-
-                        <div id="divSpdInText">
-	                     <h3 class="result"> Obrigado por usar ISKRILLEX! <br/>Link(s) Para Download(s) Abaixo: </h3>
-                       <!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=15687.divSpdSuperBanner"></script>
-<!-- Fim da Spider.Ad TAG -->
-<!-- Spider.Ad TAG - Formato SuperBanner - Website http://www.iskrillex.com -->
-<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=15687.divSpdSuperBanner"></script>
-<!-- Fim da Spider.Ad TAG -->
-
-                        </div>
-        <div class="div">
-                            <!-- Selo Spider.Ad 120x50 -->
-                            <iframe src="http://cdn4.spider.ad/indication/120x50.html?8016" width="120" height="50"
-                                    scrolling="no" frameborder="0"></iframe>
-
-                            <div class="container-fluid">
-
-
-                                <ol>
-                                    {% for url in results %}
-                                    <li>
-                                        <h4>
-                                            <a href="{{ url }}" target="_blank" title="Link Seguro">{{url|truncatewords_html:15}}</a>
-                                        </h4>
-                                    </li>
-                                    <br/>
-
-                                    </li>
-                                    {% endfor %}
-
-                                </ol>
-                    <div class="do-the-thing">
-                <div class="elevator">
-                    <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
-                        <path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
-                        <path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
-                    </svg>
-                    Volte ao Topo
-                </div>
-            </div>
-                                  {% endif %}
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-        <!-- Spider.Ad TAG - Formato SuperBanner - Website http://iskrillex.herokuapp.com -->
-<script type="text/javascript" src="http://lizard1301.spider.ad/spd_display?p1=33020.divSpdSuperBanner"></script>
-<!-- Fim da Spider.Ad TAG -->
-            </div>
-
-    </div>
-    </div>
-    </div>
-
-    <footer  id="rodape">
-        ISKRILLEX GROUP 2014 - 2015. <br/>
-        BECAUSE FREE IsUPER YUMMY!<br/>
-        <div id="divSpdInPix">
-       <figure>
-       <img src="../../static/img/Copyleft.png" title="Copyletf" alt="Copyleft" width="68" height="100" />
-
-       </figure>
-            </div>
-    </footer>
-        <script>
-
-            // Simple elevator usage.
-            var elementButton = document.querySelector('.elevator');
-            var elevator = new Elevator({
-                element: elementButton,
-                mainAudio: '../../static/music/elevator.mp3', // Music from http://www.bensound.com/
-                endAudio:  '../../static/music/ding.mp3'
-            });
-
-        </script>
-
-    <script type="text/javascript">
-   if(document.getElementById("ad_block") == undefined) {
-                //Aqui vai a tratativa para solicitar liberação, etc
-                alert("Por Favor! Desative o ADBLOCK em nosso Aplicativo ou faça uma doação! Para ajudar a manter-lo on-Line @^@");
-                //Nem pense em esconder conteúdo! :O
-              }
- </script>
 </body>
 </html>

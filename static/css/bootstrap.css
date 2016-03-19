@@ -6169,41 +6169,18 @@ a.badge:focus {
 
 #resultsDiv ul li {
 	margin-bottom:12px; text-align:left;}
-	
+
 #resultsDiv h1 {
 	text-align:left; margin-left:35px; margin-top:10px;}
-	
-a#twitter {
+
+/*a#twitter {
 	background:url(/static/img/twitter.png); top:35px; right:34px; position:absolute; width:24px; height:24px;}
-	
+
 a#twitter:hover {
 	background:url(/static/img/twitterover.png); top:35px; right:34px; position:absolute; width:24px; height:24px;}
 
 a#face {
 	background:url(/static/img/facebook.png); top:35px; right:5px; position:absolute; width:24px; height:24px;}
-	
+
 a#face:hover {
-	background:url(/static/img/facebookover.png); top:35px; right:5px; position:absolute; width:24px; height:24px;}
-
-a#sd {
-	top:5px; left:10px; position:absolute; color:#E6E6E6;}
-a#sd:hover {
-top:5px; left:10px; position:absolute; color:#CF5858; text-decoration:blink; font-weight:500;}
-
-a#email {
-	top:35px; left:10px; position:absolute; color:#666; font-weight:700; margin:1px;}
-a#email:hover {
-	top:35px; left:10px; position:absolute; color:#666; text-decoration:none; margin:1px;}
-	
-a#sr {
-	top:5px; left:100px; position:absolute; color:#E6E6E6;}
-a#sr:hover {
-	top:5px; left:100px; position:absolute; color:#CF5858; text-decoration:blink; font-weight:500;}
-
-#down {
-	top:35px; left:100px; position:absolute; margin:1px;}
-
-a#wm {
-	top:5px; left:310px; position:absolute; color:#E6E6E6;}
-a#wm:hover {
-	top:5px; left:310; position:absolute; color:#CF5858; text-decoration:blink; font-weight:500;}
+	background:url(/static/img/facebookover.png); top:35px; right:5px; position:absolute; width:24px; height:24px;}*/

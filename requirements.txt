@@ -4,4 +4,4 @@ certifi
 distribute
 dj-database-url
 requests
-Django
+Django==1.3.1
