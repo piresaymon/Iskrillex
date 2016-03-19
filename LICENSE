@@ -631,12 +631,10 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    {one line to give the program's name and a brief idea of what it does.}
-<<<<<<< HEAD
-    Copyright (C) {2014}  {Saymon}
-=======
-    Copyright (C) {year}  {name of author}
->>>>>>> 9cd207e3701f077a571984244b4e858b2ba61714
+    
+   Iskrillex Copyright (C) 2014  Saymon Pires Da Silva
+
+   
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -653,13 +651,13 @@ the "copyright" line and a pointer to where the full notice is found.
 
 Also add information on how to contact you by electronic and paper mail.
 
-Email:piresaymon@gmial.com WhatsApp: +55 28 9 99 01 21 83
+  Email:piresaymon@gmail.com WhatsApp: +55 28 999 881 793
 
 
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    {project}  Copyright (C) 2014  Saymon Pires Da Silva
+    Iskrillex Copyright (C) 2014  Saymon Pires Da Silva
 
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
