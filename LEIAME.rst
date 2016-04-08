@@ -69,7 +69,11 @@ utilizando Virtualenv você poderar testar seu aplicativo e suas dependencias se
 Entre na Pasta onde se encontra o projeto Iskrillex e inicie o processo com o Virtualenv
  
  pip install virtualenv 
+ ----------------------
+ 
  virtualenv ENV
+ --------------
+ 
  source ENV/bin/activate
  =======================
  
