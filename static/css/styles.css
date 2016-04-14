@@ -8,6 +8,9 @@
 
 }
 
+.navbar-nav {
+    padding-top: 10px;
+}
 
 body {
     color: #0C1F31;
